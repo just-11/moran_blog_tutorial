@@ -27,7 +27,7 @@ DEBUG = False
 
 
 # 允许的服务器
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['www.moran11.top']
 
 # 静态文件收集目录
 STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
