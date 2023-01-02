@@ -25,6 +25,7 @@ SECRET_KEY = 'cv*6c_gx$1=b16ya(a@67^en$b3ed)4k_)i_m&%c*ih9&l2ib1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+
 # 允许的服务器
 ALLOWED_HOSTS = ['*']
 
