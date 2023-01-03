@@ -2,6 +2,8 @@
 from django import forms
 # 引入 user模型
 from django.contrib.auth.models import User
+#引入UserCreationForm
+from django.contrib.auth.forms import UserCreationForm
 # 引入 Profile 模型
 from .models import Profile
 
@@ -15,6 +17,10 @@ class UserRegisterForm(forms.ModelForm):
     # 复写 User 的密码
     password = forms.CharField()
     password2 = forms.CharField()
+
+    # 添加 email 到默认的 UserCreateForm
+    email = forms.EmailField(label="Email")
+
 
     class Meta:
         model = User
